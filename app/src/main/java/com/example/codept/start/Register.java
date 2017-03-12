@@ -18,7 +18,7 @@ public class Register extends AppCompatActivity {
     }
     public void register(){
         final EditText uname=(EditText)findViewById(R.id.uname);
-        final EditText upass=(EditText)findViewById(R.id.pass);
+        final EditText upassword=(EditText)findViewById(R.id.pass);
         final EditText pass1=(EditText)findViewById(R.id.pass1);
         final EditText phone=(EditText)findViewById(R.id.phone);
         btn=(Button)findViewById(R.id.subr);
@@ -26,7 +26,7 @@ public class Register extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v)
             {
-                if(upass.getText().toString().equals(pass1.getText().toString()))
+                if(upassword.getText().toString().equals(pass1.getText().toString()))
                 {
                     Toast.makeText(Register.this, " Username:"+uname.getText().toString()+"\nPhoneno: "+phone.getText().toString(), Toast.LENGTH_LONG).show();
                 }

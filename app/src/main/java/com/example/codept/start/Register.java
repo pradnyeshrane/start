@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class Register extends AppCompatActivity {
- public static Button btn;
+ public static Button bt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,9 +21,9 @@ public class Register extends AppCompatActivity {
         final EditText upassword=(EditText)findViewById(R.id.pass);
         final EditText pass1=(EditText)findViewById(R.id.pass1);
         final EditText phone=(EditText)findViewById(R.id.phone);
-        btn=(Button)findViewById(R.id.subr);
+        bt=(Button)findViewById(R.id.subr);
 
-        btn.setOnClickListener(new View.OnClickListener(){
+        bt.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v)
             {
                 if(upassword.getText().toString().equals(pass1.getText().toString()))
